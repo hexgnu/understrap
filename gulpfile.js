@@ -178,6 +178,10 @@ gulp.task( 'copy-assets', function() {
     gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
         .pipe( gulp.dest( './fonts' ) );
 
+// Copy all monotype fonts
+    gulp.src( './sass/assets/Fonts/*.{ttf,woff,woff2,eot,svg}')
+        .pipe( gulp.dest( paths.css ) );
+
 // Copy all Font Awesome SCSS files
     gulp.src( paths.node + 'font-awesome/scss/*.scss' )
         .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );

@@ -1,1 +1,256 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Your Chief Scientist Colors are defined in the variables scss
+
+/* 
+ Typography Section
+*/
+@font-face{
+    font-family:"Hope Sans W02 Regular";
+    src:url("2cd65c4a-b816-430e-bd49-4339c28529cc.eot?#iefix");
+    src:url("2cd65c4a-b816-430e-bd49-4339c28529cc.eot?#iefix") format("eot"),url("d4e4bf36-c10c-4362-967a-4b3d0a6481b0.woff2") format("woff2"),url("df7a1ac3-6c7c-462f-ab7a-0036bd45d5de.woff") format("woff"),url("68c8381f-148c-478b-bfd9-d86c0a13bffc.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Hope Sans W02 Bold";
+    src:url("4fee34a3-a30c-4e1b-b691-1f81888635ad.eot?#iefix");
+    src:url("4fee34a3-a30c-4e1b-b691-1f81888635ad.eot?#iefix") format("eot"),url("8d719a69-e119-46bb-88b3-21b7758e7ebe.woff2") format("woff2"),url("39e7dda4-7555-4ae7-b07a-d97d5e0a09f7.woff") format("woff"),url("66714005-f7b9-4835-9493-8da4fee502c6.ttf") format("truetype");
+}
+@font-face{
+    font-family:"News Plantin MT W01 Bold";
+    src:url("0f97bb11-8f1e-4f80-82b4-37f02a800b10.eot?#iefix");
+    src:url("0f97bb11-8f1e-4f80-82b4-37f02a800b10.eot?#iefix") format("eot"),url("d2ad29ae-2883-4bbc-a29d-f4b3aafbc651.woff2") format("woff2"),url("./18cda61e-49dd-45c9-b799-f9a4d189f7bc.woff") format("woff"),url("d38184d3-8b6a-42f8-a0dd-e8b99f62b9d5.ttf") format("truetype");
+}
+
+h1 { font-family: "News Plantin MT W01 Bold"; }
+h2,h3,h4,h5,h6,button,.btn,.widget_nav_menu,#navbarNavDropdown { font-family: 'Hope Sans W02 Bold'; }
+body { font-family: 'Hope Sans W02 Regular'; }
+
+/*
+ * Homepage Specific Styling
+ */
+
+.home {
+    .jumbotron { background-color: $light };
+    .logo-carousel {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .images {
+            margin: auto;
+            flex-direction: row !important;
+            display: flex;
+            display: -ms-flexbox;
+            display: table;
+            -ms-flex-direction: row!important;
+            flex-direction: row!important;
+            -ms-flex-pack: justify!important;
+            justify-content: space-between!important;
+            -ms-flex-align: center!important;
+            align-items: center!important;
+            .logo {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 0 1rem;
+                img[title=logo-herman-miller] { 
+                    height: 92px;
+                }
+                img[title=logo-sheerid] {
+                    width: 197px;
+                }
+                img[title=logo-madrona] {
+                    height: 92px;
+                }
+                img[title=logo-supadupa] {
+                    height: 92px;
+                }
+                img[title=logo-volt] {
+                    height: 92px;
+                }
+                img[title=logo-clickfunnels] {
+                    height: 92px;
+                }
+                img[title=logo-garver] {
+                    width: 200px;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Logo Bar put in the top full widget
+
+.custom-logo-link {
+    img { max-width: 180px; }
+}
+
+
+// Testimonial block styling
+section.quotes-block {
+    background-color: #ebebeb;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+	margin-right: -15px;
+	margin-left: -15px;	
+	.quotes-block-quotes {
+		float: none;
+		width: auto;
+	}
+
+	//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+	blockquote{
+	  display: table-cell;
+	  font-size: 1.4em;
+	  width:60%;
+	  margin:50px auto;
+	  font-family:'Hope Sans W02 Regular';
+	  padding:1.2em 30px 1.2em 75px;
+	  line-height:1.6;
+	  position: relative;
+	}
+
+	blockquote::before{
+	  font-family:serial;
+	  content: "\201C";
+	  color: $gray-600;
+	  font-size:10rem;
+	  position: absolute;
+	  left: -2rem;
+	  top:-2rem;
+	}
+
+	blockquote::after{
+	  content: '';
+	}
+
+	blockquote span{
+	  display:block;
+	  font-family: 'Hope Sans W02 Bold';
+	  font-style: normal;
+	  margin-top:1em;
+	}
+/*
+    .quotes-block-quote-content {
+		margin-bottom: 0;
+		text-align: left;
+		.quotes-block-quote-text {
+			padding-left: 140px;
+			font-size: 1.9rem;
+		}
+
+		.quotes-block-quote-text:before {
+			content: "\201C";
+			line-height: 60px;
+			position: absolute;
+			top: 1.5rem;
+			left: 30px;
+			color: #d4d4d4;
+			font-size: 10rem;
+			font-family: Playfair Display,serif;
+			font-weight: 700;
+		}
+
+		.quotes-block-person {
+			padding-left: 140px;
+			font-size: 16px;
+			.quotes-block-person-name {
+				font-family: 'Hope Sans W02 Bold';
+			}
+			
+		}
+		
+	}
+*/
+	.quotes-block-persons-image {
+		text-align: center;
+		position: relative;
+		margin-bottom: 1rem;
+	}
+	.quotes-block-persons-image, .quotes-block, .quotes-block-quote-content {
+		display: table-cell;
+		vertical-align: middle;
+	}
+    img {
+		position: relative;
+		border-radius: 50%;
+		z-index: 10;
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		width: 230px;
+		min-width: 230px;
+	}
+}
+
+/*
+ * Form styling
+ */
+
+.btn { 
+	border: 1px solid rgba(0,0,0,0.2);
+    color: $white; 
+    background-color: $danger;
+	border-radius: 3px;
+}
+
+.btn:hover {
+	background-color: $light-danger;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* 
+ * Footer Styling
+ */
+
+footer.entry-footer {
+    background-color: $primary;
+    a {
+        color: $white;
+    }
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#wrapper-footer-full {
+	margin-top: -30px;
+    h3 {
+        font-weight: bold;
+        display: inline;
+        border-bottom: 1.2rem solid $light-danger; 
+        line-height: 2.2rem;
+    }
+
+    .container {
+        .row {
+            .widget_nav_menu {
+                div {
+                    padding-top: 3rem;
+                }
+
+                ul { 
+                    padding-left: 0;
+                }
+                ul > li {
+                    border-top: 1px solid $gray-600;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    
+    a { color: $white; }
+    background-color: $primary;
+    color: $white;
+}
+
+#wrapper-footer {
+    background-color: $primary;
+    color: $gray-600;
+    a {
+        color: $gray-600;
+    }
+    a:hover {
+        color: $gray-700;
+    }
+}
+
+
+/* Page Specific Styling if needed */

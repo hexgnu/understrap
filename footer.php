@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="container">
 
 		<div class="row">
 
@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+                        <p class='text-muted'>&copy; <?php echo "2011&ndash;" . date('Y'); ?> Modulus 7, LLC &#124; <a href='privacy-policy'>Pivacy Policy</a> &#124; <a href='terms-and-conditions'>Terms and Conditions</a></p>
 
 					</div><!-- .site-info -->
 
