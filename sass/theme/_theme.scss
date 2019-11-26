@@ -19,9 +19,9 @@
     src:url("0f97bb11-8f1e-4f80-82b4-37f02a800b10.eot?#iefix") format("eot"),url("d2ad29ae-2883-4bbc-a29d-f4b3aafbc651.woff2") format("woff2"),url("./18cda61e-49dd-45c9-b799-f9a4d189f7bc.woff") format("woff"),url("d38184d3-8b6a-42f8-a0dd-e8b99f62b9d5.ttf") format("truetype");
 }
 
-h1 { font-family: "News Plantin MT W01 Bold"; }
-h2,h3,h4,h5,h6,button,.btn,.widget_nav_menu,#navbarNavDropdown { font-family: 'Hope Sans W02 Bold'; }
-body { font-family: 'Hope Sans W02 Regular'; }
+h1 { font-family: "News Plantin MT W01 Bold", serif; }
+h2,h3,h4,h5,h6,button,.btn,.widget_nav_menu,#navbarNavDropdown { font-family: 'Hope Sans W02 Bold', sans-serif; }
+body { font-family: 'Hope Sans W02 Regular', sans-serif; }
 
 /*
  * Homepage Specific Styling
@@ -100,7 +100,7 @@ section.quotes-block {
 	  font-size: 1.4em;
 	  width:60%;
 	  margin:50px auto;
-	  font-family:'Hope Sans W02 Regular';
+	  font-family:'Hope Sans W02 Regular', sans-serif;
 	  padding:1.2em 30px 1.2em 75px;
 	  line-height:1.6;
 	  position: relative;
@@ -122,7 +122,7 @@ section.quotes-block {
 
 	blockquote span{
 	  display:block;
-	  font-family: 'Hope Sans W02 Bold';
+	  font-family: 'Hope Sans W02 Bold', sans-serif;
 	  font-style: normal;
 	  margin-top:1em;
 	}
@@ -252,5 +252,40 @@ footer.entry-footer {
     }
 }
 
+header { 
+	text-align: center;
+	padding-bottom:1.25rem
+}
+
+header h1 { font-size:3rem; }
+
+h1 { 
+	padding-bottom: 1.5rem; 
+	color: rgba(255, 0, 0, 0.73);
+}
+
+h2, h3 { padding: 1.5rem 0;  }
+
+.page-id-109 h2 {
+	color: rgba(255, 0, 0, 0.73);
+	padding-bottom: 1.5rem;
+	font-family: "News Plantin MT W01 Bold";
+	font-size: 2.5rem;
+}
+
+.yellow { background-color: #f8faf3}
+.white { background-color:#fff}
+.grey { background-color: #e9ecef}
+
+body { font-size: 1.25rem; }
+
+.page-id-109 .wrapper {
+	background-color: #f8faf3
+}
+
+.page-id-109 .container-fluid {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 
 /* Page Specific Styling if needed */
